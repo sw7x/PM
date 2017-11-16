@@ -25,6 +25,108 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-dashboard"></i> <span>Project Management</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="{{ URL::to('') }}/project"><i class="fa fa-circle-o"></i>Project list</a></li>
+                    <li><a href="{{ URL::to('') }}/project/assign-employees"><i class="fa fa-circle-o"></i>Assign employees</a></li>
+                    <li><a href="{{ URL::to('') }}/project/thread"><i class="fa fa-circle-o"></i>thread</a></li>
+
+                </ul>
+            </li>
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-dashboard"></i> <span>Task Management</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="{{ URL::to('') }}/task"><i class="fa fa-circle-o"></i>--Task list</a></li>
+                    <li><a href="{{ URL::to('') }}/task/assign-employees"><i class="fa fa-circle-o"></i>--Assign employees</a></li>
+                    <li><a href="{{ URL::to('') }}/task/thread"><i class="fa fa-circle-o"></i>thread</a></li>
+
+                </ul>
+            </li>
+
+            <li><a href="{{ URL::to('') }}/client"><i class="fa fa-circle-o text-red"></i> <span>Client Management</span></a></li>
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-dashboard"></i> <span>User Management</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="{{ URL::to('') }}/users"><i class="fa fa-circle-o"></i>employees</a></li>
+                    <li><a href="{{ URL::to('') }}/index2"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+                </ul>
+            </li>
+
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-dashboard"></i> <span>Time Management</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="{{ URL::to('') }}/ "><i class="fa fa-circle-o"></i>employee Project wise timing</a></li>
+                    <li><a href="{{ URL::to('') }}/index2"><i class="fa fa-circle-o"></i>Designation wise</a></li>
+                </ul>
+            </li>
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-dashboard"></i> <span>Cost Management</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="{{ URL::to('') }}/cost/calculate "><i class="fa fa-circle-o"></i>calculate cost</a></li>
+                    <li><a href="{{ URL::to('') }}/cost/employee"><i class="fa fa-circle-o"></i>Employee cost</a></li>
+                </ul>
+            </li>
+
+
+            <li class="treeview active">
+                <a href="{{ URL::to('') }}/mailbox">
+                    <i class="fa fa-envelope"></i> <span>Mailbox</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                        <small class="label pull-right bg-yellow">12</small>
+                        <small class="label pull-right bg-green">16</small>
+                        <small class="label pull-right bg-red">5</small>
+
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a href="mailbox">Inbox
+                            <span class="pull-right-container">
+                                <span class="label label-primary pull-right">13</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li><a href="compose">Compose</a></li>
+                    <li class="active"><a href="{{ URL::to('') }}/read-mail">Read</a></li>
+                </ul>
+            </li>
+
+
+
+            <br><br><br>
+
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-dashboard"></i> <span>Dashboard</span>

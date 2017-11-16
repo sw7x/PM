@@ -141,9 +141,26 @@ class PageController extends Controller
     public function calendar(){
         return view('calendar');    
     }
-    
+
     public function starter(){
-        return view('starter');    
+        return view('starter');
     }
-    
+
+
+
+   /************************************************/
+
+
+    public function compose(){
+        return view('compose');
+    }
+
+    public function client(){
+        return view('client');
+    }
+    public function users(){
+        return view('users');
+    }
+
+
 }
